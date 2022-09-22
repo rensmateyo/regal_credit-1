@@ -20,6 +20,13 @@ This is a demo app that uses Accuweather api to fetch daily weather forecast
 OR
 - [HOMESTEAD](https://laravel.com/docs/9.x/homestead)
 
+## Usage
+1. There are 2 navigation on the sidebar, The register api and accuweather
+2. Register an api key first that you can get on [Accuweather](https://developer.accuweather.com/)
+3. After register, on the accuweather tab we can see 1 input and dropdown
+4. On accuweather location input, user should only input valid locations (Ex: manila, london, chicago, etc)
+5. User should select on the day to pick desired forecast output
+
 ### Credits
 Credits to the people who developed the technologies I used in this project. 
 There's no copyright intended and the links to the real owner of the techs are listed above.

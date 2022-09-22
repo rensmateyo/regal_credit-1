@@ -33,6 +33,6 @@ class ServiceAppDisplayWeather extends ServiceBase
             'day' => $sDay,
             'api_key' => session()->get('api_key')
         ]);
-        return ['error_code' => '200', 'data' => json_decode($oResponse)];
+        return json_decode($oResponse);
     }
 }

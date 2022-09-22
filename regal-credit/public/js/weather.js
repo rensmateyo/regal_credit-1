@@ -57,7 +57,6 @@
                     $.each(
                         aResponse["data"]["DailyForecasts"],
                         function (key, value) {
-                            console.log(value);
                             $(".insertIframe").append(
                                 '<iframe src="' +
                                     value["Link"] +

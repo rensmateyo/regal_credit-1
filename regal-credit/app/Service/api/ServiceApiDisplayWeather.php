@@ -48,7 +48,10 @@ class ServiceApiDisplayWeather extends ServiceBase
         }
 
         $oResponse = Http::get(sprintf(self::ACCU_DOMAIN . '%s/%s/%s?%s', $this->sForecastApi, $sDay, $oLocationResponse[0]['Key'], http_build_query($aForecastApiParameters)));
-        return $oResponse;
+        if ($oResponse->status() !== 200) {
+            return ['error_code' => '505'];
+        }
+
         return ['error_code' => '200', 'data' => json_decode($oResponse)];
     }
 }

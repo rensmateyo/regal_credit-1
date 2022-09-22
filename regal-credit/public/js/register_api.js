@@ -30,7 +30,6 @@
                     ),
                 },
                 success: function (aResponse) {
-                    console.log(aResponse === "200");
                     if (aResponse !== "200") {
                         alert("Api key is not valid");
                         return;
